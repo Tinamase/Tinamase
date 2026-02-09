@@ -1,0 +1,156 @@
+  
+ 
+  @font-face { 
+    font-family: SeafordBold; 
+    src: url(./font/SeafordBold.ttf); 
+    font-weight: normal; 
+    }    
+    
+  @font-face { 
+    font-family: SeafordRg; 
+    src: url(./font/SeafordRg.ttf); 
+    font-weight: normal; 
+    }
+
+    .container{
+      width: 1000px;
+      background-color: #fff;
+      margin: auto;
+
+    }
+ h1 {
+    color: navy;
+    font-family: 'SeafordBold';
+    text-align: center;
+  }
+
+  h2 {
+    font-family: SeafordRg;
+    color: navy;
+}
+
+  p.myP{
+    color: brown;
+    text-align: justify;
+   text-justify: inter-word;
+  }
+
+  p{
+    font-family: SeafordRg;
+    color: black;
+  }
+
+  p.myP:hover{background-color: #ddd;}
+
+
+ body {
+        font-family: SeafordRg;
+        background-color:white;
+      }
+
+
+
+td {
+    text-align: center;
+  }
+
+
+
+
+  ol:hover{background-color: #ddd;}
+
+ul:hover{background-color: #ddd;}
+
+ol { 
+    list-style: none; 
+    counter-reset: num; 
+} 
+
+ol li { 
+    counter-increment: num; 
+}  
+  ol li::before { 
+    content:counter(num) "."; 
+    color: blue;     
+} 
+
+
+#mytable {
+    font-family: SeafordRg;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  #mytable td, #mytable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #mytable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #mytable tr:hover {background-color: #ddd;}
+  
+  #mytable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: grey;
+    color: white;
+  }
+
+  label { display: inline-block; width: 100px; text-align: right; }
+ 
+ img.myImage{
+  height: 140px;
+  width: 150px;
+  border-radius: 50%;
+ }
+ /* Styling the Header */
+#header {
+    background-color: #ba0c2f; /* Ohio State Scarlet */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Styling the Body section */
+#body {
+    padding: 20px;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Styling the Footer */
+#footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Making the image look professional */
+.myImage {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/* Update this so your name shows up white on the red background */
+#header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Ensure the summary text in the header is also easy to read */
+#header p.myP {
+    color: #f1f1f1; 
+}
+
+/* Ensure your body text doesn't have the navy color from the old template */
+#body h2 {
+    color: #ba0c2f; /* Matching the scarlet theme for section titles */
+    border-bottom: 2px solid #ddd;
+}
